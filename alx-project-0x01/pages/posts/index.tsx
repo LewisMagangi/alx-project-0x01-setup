@@ -1,7 +1,13 @@
 import React from "react";
+import Header from "@/components/layout/Header";
 
 const Posts: React.FC = () => {
-  return <div>Posts Page</div>;
+  return (
+    <div>
+      <Header />
+      <div>Posts Page</div>
+    </div>
+  );
 };
 
 export default Posts;
