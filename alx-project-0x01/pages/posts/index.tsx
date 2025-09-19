@@ -10,10 +10,10 @@ interface PostsPageProps {
 
 const Posts: React.FC<PostsPageProps> = ({ posts }) => {
   const [isModalOpen, setModalOpen] = useState(false);
-  const [post, setPost] = useState<PostData | null>(null);
 
   const handleAddPost = (newPost: PostData) => {
-    setPost({ ...newPost, id: posts.length + 1 });
+    // For now, just log the new post to avoid unused variable warning
+    console.log('New post added:', newPost);
   };
 
   return (
